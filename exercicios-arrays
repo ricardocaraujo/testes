@@ -1,0 +1,33 @@
+const numbers = [3, 4];
+
+numbers.push(5, 6);
+
+numbers.unshift(1, 2);
+
+numbers.splice(2, 0, "a", "b");
+
+const numbers2 = [1, 2, 3, 4];
+console.log(numbers.indexOf("a"));
+console.log(numbers.lastIndexOf(1));
+
+console.log(numbers.includes(1));
+
+const courses = [
+	{ id: 1, name: "a" },
+	{ id: 2, name: "b" },
+];
+
+const find = courses.find((course) => course.id === 1);
+
+const last = numbers.pop();
+const first = numbers.shift();
+
+const concat = numbers.concat(numbers2);
+
+numbers.forEach((number, index) => console.log(index, number));
+
+const joined = numbers.join(",");
+
+const message = "This is the message";
+const parts = message.split(" ");
+console.log(parts);
